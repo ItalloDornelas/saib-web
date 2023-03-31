@@ -1,11 +1,9 @@
 import { ChakraProvider, theme } from '@chakra-ui/react';
-import { AppLayout } from './modules/AppLayout';
-import { Home } from './pages/Home';
+
+import Routes from './routes';
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <AppLayout>
-      <Home />
-    </AppLayout>
+    <Routes />
   </ChakraProvider>
 );
